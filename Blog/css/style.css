@@ -7,11 +7,21 @@ body {
 	padding: 0;
 }
 
+@keyframes title {
+    0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
 h1 {
 	margin: 30px 0 10px 0;
 	color: #404040;
-	font-size: 24px;	
+	font-size: 24px;
+	animation:  title 10s ease infinite;
 }
+
+
 
 img {
 	max-width: 100%;
@@ -31,9 +41,45 @@ img {
 	font-weight: bold;
 }
 
+#main-menu > a:first:child {
+	position: absolute;
+	padding: 4px;
+	background-color: #FFFFFF;
+}
+
+
 
 .wrap {
 	max-width: 1000px;
 	margin: auto;
 }
+
+
+/* Standard syntax */
+@keyframes fadein {
+    0%	{ right: 0px;  	opacity: 1.0}
+    10%	{ right: 25x;  	opacity: 0.9}
+    20% { right: 50px;  opacity: 0.8}
+	30%	{ right: 75px;  opacity: 0.7}
+    40%	{ right: 100px;	opacity: 0.6}
+    50%	{ right: 125px; opacity: 0.5}
+    60%	{ right: 150px;	opacity: 0.4}
+    70%	{ right: 175px; opacity: 0.3}
+    80%	{ right: 200px; opacity: 0.2}
+    90%	{ right: 225px;	opacity: 0.1}
+    100%{ right: 250px; opacity: 0.0}
+}
+
+/* The element to apply the animation to */
+footer {
+	float: right;
+	
+}
+
+.animation h2{
+	position: relative;
+	animation: fadein 1s ease infinite;
+}
+
+
 
